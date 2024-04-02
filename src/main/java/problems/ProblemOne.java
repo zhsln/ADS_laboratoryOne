@@ -1,8 +1,11 @@
+package problems;
+
 import java.util.Scanner;
 
-public class ProblemTwo {
-    public static void secondProblem() {
+public class ProblemOne {
+    public static void firstProblem() {
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter a size of array: ");
         int arraySize = scanner.nextInt();
         scanner.nextLine(); // It is mandatory after using nextInt().
@@ -15,14 +18,18 @@ public class ProblemTwo {
             numbers[i] = Integer.parseInt(input[i]);
         }
 
-        System.out.println("Average value of the array: " + findAvg(numbers));
+        System.out.println("Min of the array: " + findMin(numbers));
     }
 
-    private static double findAvg(int[] numbers) {
-        int sum = 0;
+    private static int findMin(int[] numbers) {
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < numbers.length; i++)
-            sum += numbers[i];
+            if (numbers[i] < min) { // Bubble sort.
+                int temp = numbers[i];
+                numbers[i] = min;
+                min = temp;
+            }
 
-        return sum / numbers.length;
+        return min;
     }
 }
