@@ -18,7 +18,7 @@ public class ProblemOne {
             numbers[i] = Integer.parseInt(input[i]);
         }
 
-        System.out.println("Min of the array: " + findMin(numbers));
+        System.out.println("Min of the array: " + findMin(numbers) + ".");
     }
 
     private static int findMin(int[] numbers) {

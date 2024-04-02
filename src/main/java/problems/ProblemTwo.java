@@ -17,7 +17,7 @@ public class ProblemTwo {
             numbers[i] = Integer.parseInt(input[i]);
         }
 
-        System.out.println("Average value of the array: " + findAvg(numbers));
+        System.out.println("Average value of the array: " + findAvg(numbers) + ".");
     }
 
     private static double findAvg(int[] numbers) {
