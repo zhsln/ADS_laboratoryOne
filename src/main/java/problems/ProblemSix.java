@@ -13,6 +13,18 @@ public class ProblemSix {
         System.out.println("Answer: " + pow(a, n) + "."); // This is pow(), NOT Math.pow().
     }
 
+    /**
+     * This method finds the A in power of B, where A and B are input numbers.
+     * It uses a recursive approach.
+     * Time complexity: O(B), where B is the degree to which the number A is raised.
+     * The recursive algorithm makes recursive calls,
+     * reducing the degree of B by 1 at each step, until it reaches the base case,
+     * resulting in linear time complexity.
+     *
+     * @param a base number
+     * @param b degree number
+     * @return an A in power of B.
+     */
     private static int pow(int a, int b) {
         if (b == 1) // Base case.
             return a;

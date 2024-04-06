@@ -6,13 +6,23 @@ public class ProblemSeven {
     public static void seventhProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a size of array: ");
-        int arraySize = scanner.nextInt();
+        int sequenceLength = scanner.nextInt();
 
         System.out.print("Enter the sequence of elements separated by space: ");
-        displayReverseSequence(scanner, arraySize);
+        System.out.println("Reversed sequence: ");
+        displayReverseSequence(scanner, sequenceLength);
     }
 
-    public static void displayReverseSequence(Scanner scanner, int n) {
+    /**
+     * This method displays reversed sequence of integers in reversed order without using array.
+     * Time complexity: O(n), where n is the amount of numbers to be counted and output.
+     * The recursive algorithm iterates through all numbers from n to 1,
+     * resulting in linear time complexity.
+     *
+     * @param scanner just util.Scanner
+     * @param n the length of sequence.
+     */
+    private static void displayReverseSequence(Scanner scanner, int n) {
         if (n <= 0) // Base case.
             return;
 
