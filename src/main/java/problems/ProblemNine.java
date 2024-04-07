@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 9.
+ */
 public class ProblemNine {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void ninthProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
@@ -22,7 +28,7 @@ public class ProblemNine {
      * @param k the input integer.
      * @return integer C(n,k), where n and k are input integers.
      */
-    private static int calculateBinomialCoefficient(int n, int k) {
+    public static int calculateBinomialCoefficient(int n, int k) {
         if (k == 0 || k == n) // Base case.
             return 1; // according to the task.
 

@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 6.
+ */
 public class ProblemSix {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void sixthProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter base number: ");
@@ -25,7 +31,7 @@ public class ProblemSix {
      * @param b degree number
      * @return an A in power of B.
      */
-    private static int pow(int a, int b) {
+    public static int pow(int a, int b) {
         if (b == 1) // Base case.
             return a;
 

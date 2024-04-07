@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 2.
+ */
 public class ProblemTwo {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void secondProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a size of array: ");
@@ -23,16 +29,16 @@ public class ProblemTwo {
      * This method finds an average value of elements of the array,
      * using comparative operator, incrementation and division.
      * Time complexity: O(n), where n is the size of array.
-     * The algorithm iterates through all numbers from 0 to n,
+     * The algorithm iterates through all numbers from 0 to n, where n is the size of array,
      * resulting in linear time complexity.
      *
      * @param numbers The array that filled with integers.
      * @return The average value of elements of the array.
      */
-    private static double findAvg(int[] numbers) {
-        int sum = 0;
-        for (int i = 0; i < numbers.length; i++)
-            sum += numbers[i];
+    public static double findAvg(int[] numbers) {
+        double sum = 0;
+        for (int number : numbers)
+            sum += number;
 
         return sum / numbers.length;
     }

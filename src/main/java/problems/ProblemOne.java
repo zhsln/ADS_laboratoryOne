@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 1.
+ */
 public class ProblemOne {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void firstProblem() {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,16 +27,16 @@ public class ProblemOne {
     }
 
     /**
-    * This method finds the smallest number in the array,
-    * using comparative operator and bubble sort.
-    * Time complexity: O(n), where n is the size of array.
+     * This method finds the smallest number in the array,
+     * using comparative operator and bubble sort.
+     * Time complexity: O(n), where n is the size of array.
      * The algorithm iterates through all numbers from 0 to n,
      * resulting in linear time complexity.
      *
-    * @param numbers The array that filled with integers.
+     * @param numbers The array that filled with integers.
      * @return The smallest number in the array.
     */
-    private static int findMin(int[] numbers) {
+    public static int findMin(int[] numbers) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < numbers.length; i++)
             if (numbers[i] < min) { // Bubble sort.

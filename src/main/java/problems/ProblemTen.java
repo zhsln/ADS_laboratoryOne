@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 10.
+ */
 public class ProblemTen {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void tenthProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a: ");
@@ -22,7 +28,7 @@ public class ProblemTen {
      * @param b the input integer.
      * @return GCD(a,b) (greatest common divisor of a and b)
      */
-    private static int calculateGCD(int a, int b) {
+    public static int calculateGCD(int a, int b) {
         if (b == 0)
             return a;
 

@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 7.
+ */
 public class ProblemSeven {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void seventhProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a size of array: ");
@@ -22,7 +28,7 @@ public class ProblemSeven {
      * @param scanner just util.Scanner
      * @param n the length of sequence.
      */
-    private static void displayReverseSequence(Scanner scanner, int n) {
+    public static void displayReverseSequence(Scanner scanner, int n) {
         if (n <= 0) // Base case.
             return;
 

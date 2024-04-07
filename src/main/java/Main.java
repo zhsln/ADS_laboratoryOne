@@ -2,7 +2,13 @@ import problems.*;
 
 import java.util.Scanner;
 
+/**
+ * This class contains console manager to launch solutions to problems.
+ */
 public class Main {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void main(String[] args) {
         int choice = -1;
         do {

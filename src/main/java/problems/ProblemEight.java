@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 import static java.lang.Character.isDigit;
 
+/**
+ * This class contains solution to Problem 8.
+ */
 public class ProblemEight {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void eighthProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
@@ -24,9 +30,9 @@ public class ProblemEight {
      *
      * @param input User's string
      * @param index The index of character in String.
-     * @return
+     * @return true or false.
      */
-    private static boolean isOnlyDigits(String input, int index) {
+    public static boolean isOnlyDigits(String input, int index) {
         if (input.length() == index) // Base case.
             return true;
 

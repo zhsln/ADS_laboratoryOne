@@ -2,7 +2,13 @@ package problems;
 
 import java.util.Scanner;
 
+/**
+ * This class contains solution to Problem 4.
+ */
 public class ProblemFour {
+    /**
+     * This method contains only a Scanner, which takes values for calculations.
+     */
     public static void fourthProblem() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -21,7 +27,7 @@ public class ProblemFour {
      * @param num The number for which the factorial is to be calculated
      * @return The factorial of the given number
      */
-    private static int factorial(int num) {
+    public static int factorial(int num) {
         if (num == 0 || num == 1) // Base case.
             return 1;
 
